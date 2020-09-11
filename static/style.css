@@ -1,0 +1,70 @@
+html,
+body {
+  width: 100%;
+  position: absolute;
+  margin-left: 0;
+  font-family: "Muli", sans-serif;
+  background: #b6e3fb;
+  color: #001F3F;
+}
+.params_container {
+  padding: 1.8em;
+  padding-left: 15%;
+}
+
+.btn_container {
+  padding-top: 10px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.p5Canvas {
+  padding-top: 1.5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  font-family: "Muli", sans-serif;
+  padding: 5px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+  border-radius: 20px;
+  border-radius: 50px;
+  background: #b6e3fb;
+  box-shadow: -7px -7px 14px #9bc1d5, 7px 7px 14px #d1ffff;
+}
+button:active {
+  border-radius: 50px;
+  background: #b6e3fb;
+  box-shadow: -5px -5px 10px #9bc1d5, 5px 5px 10px #d1ffff;
+}
+#x,
+#y {
+  width: 40px;
+  text-align: center;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 15px;
+  border-radius: 20px;
+  border-radius: 5px;
+  background: #b6e3fb;
+  box-shadow: -5px -5px 10px #9bc1d5, 5px 5px 10px #d1ffff;
+}
+#bias {
+  vertical-align: middle;
+}
+
+#path_len{
+  text-align: center;
+  padding-top: 0.8em;
+}
+h2 {
+  text-align: center;
+}

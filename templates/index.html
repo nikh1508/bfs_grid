@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BFS | Shortest path in Grid</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script type="text/javascript" src="{{path}}/static/sketch.js"></script>
+    <script type="text/javascript" src="{{path}}/static/queue.js"></script>
+    <script type="text/javascript" src="{{path}}/static/bfs.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="{{path}}/static/style.css" />
+    <link rel="icon" type="image/png" href="{{path}}/favicon.ico"/>
+  </head>
+  <body>
+    <h2>BFS | Shortest Path in Grid</h2>
+    <div class="params_container">
+      <form action="/action_page.php">
+        <label for="x">X : </label>
+        <input type="number" id="x" name="x" value="10" /><br /><br />
+        <label for="y">Y : </label>
+        <input type="number" id="y" name="y" value="10" /><br /><br />
+      </form>
+      <label for="bias"> Obstacle Bias : </label>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="30"
+        class="slider"
+        id="bias"
+      />
+    </div>
+    <div class="btn_container">
+      <button id="generate" onclick="generateMaze()">Generate MAZE</button>
+      <button id="sel_source" onclick="selectSource()">Select Source</button>
+      <button id="sel_destination" onclick="selectDestination()">
+        Select Destination
+      </button>
+      <button id="calc_path" onclick="calcPath()">Calculate</button>
+    </div>
+    <div id="p5_canvas"></div>
+    <div id="path_len"></div>
+  </body>
+</html>
