@@ -59,7 +59,6 @@ function selectSource() {
   document.getElementById("sel_destination").style.backgroundColor = "";
   document.getElementById("sel_source").style.backgroundColor = "grey";
   cnv.mousePressed(() => changeColor("source"));
-  matrix[source[1]][source[0]] = matrix_orig[source[1]][source[0]];
 }
 function selectDestination() {
   if (!mazeGenerated) {
@@ -75,8 +74,6 @@ function selectDestination() {
   document.getElementById("sel_source").style.backgroundColor = "";
   document.getElementById("sel_destination").style.backgroundColor = "grey";
   cnv.mousePressed(() => changeColor("destination"));
-  matrix[destination[1]][destination[0]] =
-    matrix_orig[destination[1]][destination[0]];
 }
 
 function changeColor(point) {

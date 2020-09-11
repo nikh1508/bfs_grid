@@ -53,7 +53,7 @@ class BFS {
         rr = node_now.i + dr[i];
         cc = node_now.j + dc[i];
 
-        if (rr < 0 || rr >= this.x || cc < 0 || cc >= this.y) continue; // out of bounds
+        if (rr < 0 || rr >= this.y || cc < 0 || cc >= this.x) continue; // out of bounds
         if (this.visited[rr][cc] == 1 || this.matrix[rr][cc] == "1") continue; // Either visited or obstacle
         this.visited[rr][cc] = 1;
         var next_node = new Point([rr, cc], node_now, node_now.dist + 1);
